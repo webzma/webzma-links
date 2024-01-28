@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
+  margin: 0;
+
+  --white: hsl(0, 0%, 100%);
+  --description: #c5cfee;
+  --grey: hsl(0, 0%, 20%);
+  --darkrey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --blue: #3d47ee;
+}
+
+body {
+  background: var(--off-black);
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  color: var(--white);
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+article {
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  background: var(--darkrey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.location {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  color: #facc15e6;
+  font-weight: 600;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  font-weight: 400;
+  margin: 20px;
+  color: var(--description);
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+ul {
+  padding: 0;
+  gap: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+li {
+  background: var(--grey);
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  transition: all .1s ease-in-out;
+}
+
+li:active {
+  background: var(--blue);
+}
+
+li:hover {
+  background: var(--blue);
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  font-size: .9rem;
+  width: 100%;
+  text-align: center;
+}
+
+.i {
+  display: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+.react {
+  color: rgb(79, 141, 255);
+}
+
+.nextjs {
+  color: white;
+}
+
+.astro {
+  color: rgb(240, 123, 80);
+}
