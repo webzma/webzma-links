@@ -17,7 +17,7 @@ body {
   min-height: 100dvh;
   display: grid;
   place-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -78,7 +78,7 @@ header {
   margin: 20px;
   color: var(--description);
   font-weight: 400;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 ul {
@@ -99,7 +99,7 @@ li {
   align-items: center;
   justify-content: center;
   border-radius: 7px;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 li:active {
@@ -115,7 +115,7 @@ li a {
   text-decoration: none;
   color: var(--white);
   font-weight: 600;
-  font-size: .9rem;
+  font-size: 0.9rem;
   width: 100%;
   text-align: center;
 }
